@@ -1,0 +1,175 @@
+{
+    "workflowApiVersion": "1.1",
+    "metaData": {
+       "icon": "https://njvryvkojo7row4akzq4m4smsi0dynzf.lambda-url.us-west-2.on.aws/public/images/iconIG.png",
+       "category": "message",
+       "configondrop" : true,
+       "isConfigured" : true
+    },
+    "type": "REST",
+    "lang": {
+       "en-US": {
+           "name": "DTC Fulfillment",
+           "description": "Validate Patient"
+       }
+    },
+    "configurationArguments": {
+        "applicationExtensionKey": "fe8952b7-8dfd-4926-b9bb-10fd1d748528",
+        "save": {
+            "url": "https://njvryvkojo7row4akzq4m4smsi0dynzf.lambda-url.us-west-2.on.aws/journeybuilder/save",
+            "verb": "POST",
+            "body": "",
+            "useJwt": false
+        },
+        "publish": {
+            "url": "https://njvryvkojo7row4akzq4m4smsi0dynzf.lambda-url.us-west-2.on.aws/journeybuilder/publish",
+            "verb": "POST",
+            "body": "",
+            "useJwt": false
+        },
+        "validate": {
+            "url": "https://njvryvkojo7row4akzq4m4smsi0dynzf.lambda-url.us-west-2.on.aws/journeybuilder/validate",
+            "verb": "POST",
+            "body": "",
+            "useJwt": false
+        },
+        "stop": {
+            "url": "https://njvryvkojo7row4akzq4m4smsi0dynzf.lambda-url.us-west-2.on.aws/journeybuilder/stop",
+            "verb": "POST",
+            "body": "",
+            "useJwt": false
+        }
+    },
+    "wizardSteps": [
+        {
+            "label": "Step 1",
+            "key": "step1"
+        }
+    ],
+    "arguments": {
+        "execute": {
+            "inArguments": [
+                {
+                  "patId": "{{Contact.Key}}"
+                ,             
+                
+                  "brand": ""
+                ,             
+                
+                  "sourcecode": ""
+                ,             
+                
+                  "formsource": ""
+                ,             
+                
+                  "programname": ""
+                ,             
+                
+                  "programcode": ""
+                ,             
+                
+                  "campaigncode": ""
+                ,             
+                
+                  "campoffercode": ""
+                ,          
+                
+                  "campkitcode": ""
+                ,
+                
+                    "env": ""
+                ,
+                
+                    "vendor": ""
+                }       
+            ],
+            "outArguments" : [],
+            "useJwt" : false,
+            "body" : "",
+            "format" : "json",
+            "header" : "",
+            "timeout" : 15000,
+            "retryCount" : 10,
+            "retryDelay" : 1000,
+            "concurrentRequests" : 1,
+            "url": "https://njvryvkojo7row4akzq4m4smsi0dynzf.lambda-url.us-west-2.on.aws/journeybuilder/execute",
+            "verb": "POST"
+        }
+    },
+    "userInterfaces": {
+       "configModal": {
+           "height": 600,
+           "width": 800,
+           "url":"index.html",
+           "fullscreen": false
+       }
+    },
+    "copySettings" :{
+        "allowcopy" : true
+    },
+    "schema": {
+        "arguments": {
+            "execute": {
+                "inArguments": [
+                    {
+                        "patId": {
+                            "dataType": "String",
+                            "isNullable": false,
+                            "direction": "in"   
+                        },
+                        "env": {
+                            "dataType": "String",
+                            "isNullable": false,
+                            "direction": "in"
+                        },
+                        "vendor" :{
+                            "dataType": "String",
+                            "isNullable": false,
+                            "direction": "in"
+                        },
+                        "brand": {
+                            "dataType": "String",
+                            "isNullable": false,
+                            "direction": "in"   
+                        },
+                        "sourcecode": {
+                            "dataType": "String",
+                            "isNullable": false,
+                            "direction": "in"   
+                        },
+                        "formsource": {
+                            "dataType": "String",
+                            "isNullable": false,
+                            "direction": "in"   
+                        },
+                        "programname": {
+                            "dataType": "String",
+                            "isNullable": false,
+                            "direction": "in"   
+                        },
+                        "programcode": {
+                            "dataType": "String",
+                            "isNullable": false,
+                            "direction": "in"   
+                        },
+                        "campaigncode": {
+                            "dataType": "String",
+                            "isNullable": false,
+                            "direction": "in"   
+                        },
+                        "campoffercode": {
+                            "dataType": "String",
+                            "isNullable": false,
+                            "direction": "in"   
+                        },
+                        "campkitcode": {
+                            "dataType": "String",
+                            "isNullable": false,
+                            "direction": "in"   
+                        }
+                    }],
+                "outArguments": []
+            }
+        }
+    }
+}
