@@ -14,27 +14,27 @@
        }
     },
     "configurationArguments": {
-        "applicationExtensionKey": "fe8952b7-8dfd-4926-b9bb-10fd1d748528",
+        "applicationExtensionKey": "eeb78801-f1ec-4a54-8fbf-17069968ca2e",
         "save": {
-            "url": "https://njvryvkojo7row4akzq4m4smsi0dynzf.lambda-url.us-west-2.on.aws/journeybuilder/save",
+            "url": "https://danish-five.vercel.app/journeybuilder/save",
             "verb": "POST",
             "body": "",
             "useJwt": false
         },
         "publish": {
-            "url": "https://njvryvkojo7row4akzq4m4smsi0dynzf.lambda-url.us-west-2.on.aws/journeybuilder/publish",
+            "url": "https://danish-five.vercel.app/journeybuilder/publish",
             "verb": "POST",
             "body": "",
             "useJwt": false
         },
         "validate": {
-            "url": "https://njvryvkojo7row4akzq4m4smsi0dynzf.lambda-url.us-west-2.on.aws/journeybuilder/validate",
+            "url": "https://danish-five.vercel.app/journeybuilder/validate",
             "verb": "POST",
             "body": "",
             "useJwt": false
         },
         "stop": {
-            "url": "https://njvryvkojo7row4akzq4m4smsi0dynzf.lambda-url.us-west-2.on.aws/journeybuilder/stop",
+            "url": "https://danish-five.vercel.app/journeybuilder/stop",
             "verb": "POST",
             "body": "",
             "useJwt": false
@@ -92,7 +92,7 @@
             "retryCount" : 10,
             "retryDelay" : 1000,
             "concurrentRequests" : 1,
-            "url": "https://njvryvkojo7row4akzq4m4smsi0dynzf.lambda-url.us-west-2.on.aws/journeybuilder/execute",
+            "url": "https://danish-five.vercel.app/journeybuilder/execute",
             "verb": "POST"
         }
     },
